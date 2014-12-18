@@ -7,7 +7,7 @@
 #role :app, %w{deploy@example.com}
 #role :web, %w{deploy@example.com}
 #role :db,  %w{deploy@example.com}
-role :app, %w{development@172.16.144.235}
+role :all, %w{development@172.16.144.235}
 
 
 
