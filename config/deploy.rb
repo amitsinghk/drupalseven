@@ -2,7 +2,7 @@
 lock '3.3.5'
 
 set :application, 'drupal7'
-set :repo_url, 'https://github.com/amitsinghk/drupalseven.git'
+set :repo_url, 'git@github.com:amitsinghk/drupalseven.git'
 
 # Default branch is :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
