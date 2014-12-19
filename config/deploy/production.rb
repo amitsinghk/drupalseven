@@ -7,7 +7,7 @@
 #role :app, %w{deploy@example.com}
 #role :web, %w{deploy@example.com}
 #role :db,  %w{deploy@example.com}
-role :app, %w{development@172.16.144.235}
+role :app, %w{deployer@172.16.144.235}
 
 
 
@@ -20,7 +20,7 @@ role :app, %w{development@172.16.144.235}
 
 #server 'example.com', user: 'deploy', roles: %w{web app}, my_property: :my_value
 
-server '172.16.144.235', user: 'development', roles: %w{app}
+server '172.16.144.235', user: 'deployer', roles: %w{app}
 # Custom SSH Options
 # ==================
 # You may pass any option but keep in mind that net/ssh understands a
@@ -49,6 +49,6 @@ server '172.16.144.235', user: 'development', roles: %w{app}
 set :ssh_options, {
     forward_agent: false,
     auth_methods: %w(password),
-    password: 'dev@123',
-    user: 'development',
+    password: 'deployer',
+    user: 'deployer',
 }
